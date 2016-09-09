@@ -226,7 +226,7 @@ public class Checker {
 	 * @return java.java.checker.java.checker file handler
 	 */
 	private static FileHandler getCheckerFileHandler(Formatter formatter) throws IOException {
-		FileHandler checkerFileHandler = new FileHandler(LOG_DIR + File.separatorChar + "java.java.checker.java.checker.log", true);
+		FileHandler checkerFileHandler = new FileHandler(LOG_DIR + File.separatorChar + "checker.log", true);
 		checkerFileHandler.setLevel(Level.CONFIG);
 		LoggerFilter checkerFileFilter = new LoggerFilter(Level.CONFIG, Level.INFO);
 		checkerFileHandler.setFilter(checkerFileFilter);
